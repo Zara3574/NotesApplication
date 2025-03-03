@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <View
+            android:id="@+id/priority"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="right"
@@ -39,7 +40,7 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/show_notes"
+                android:id="@+id/show_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -47,7 +48,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/show_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

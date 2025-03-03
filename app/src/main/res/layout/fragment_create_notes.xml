@@ -7,9 +7,9 @@
     tools:context=".ui.fragments.CreateNotes">
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/doneButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/doneButton"
         android:layout_gravity="bottom|end"
         android:layout_margin="15dp"
         android:backgroundTint="@color/basicRed"
@@ -62,11 +62,13 @@
             app:layout_constraintEnd_toEndOf="@+id/description"
             app:layout_constraintTop_toBottomOf="@+id/subtitle">
 
+
             <ImageView
-                android:id="@+id/pRed"
+                android:id="@+id/pGreen"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:background="@drawable/red_circle" />
+                android:background="@drawable/green_circle" />
+
 
             <ImageView
                 android:id="@+id/pYellow"
@@ -76,11 +78,11 @@
                 android:background="@drawable/yellow_circle" />
 
             <ImageView
-                android:id="@+id/pGreen"
+                android:id="@+id/pRed"
                 android:layout_width="20dp"
-                android:layout_height="20dp"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/green_circle" />
+                android:layout_height="20dp"
+                android:background="@drawable/red_circle" />
         </LinearLayout>
 
         <EditText
