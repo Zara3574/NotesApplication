@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "928294411999",
+    "project_id": "socialconnectapp-5a9df",
+    "storage_bucket": "socialconnectapp-5a9df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928294411999:android:888de2e10ebee8beb3936a",
+        "android_client_info": {
+          "package_name": "com.example.kotlinpracticeproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJAK-fXjbefP94DFHOdD9zba8eZ9c94FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928294411999:android:7c752e4ba06a143eb3936a",
+        "android_client_info": {
+          "package_name": "com.myapps.notesapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJAK-fXjbefP94DFHOdD9zba8eZ9c94FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928294411999:android:7114dd63b4a3e781b3936a",
+        "android_client_info": {
+          "package_name": "com.socialconnectapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJAK-fXjbefP94DFHOdD9zba8eZ9c94FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
