@@ -9,22 +9,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.myapps.notesapplication.databinding.NotesItemBinding
 import com.myapps.notesapplication.model.Notes
 import com.myapps.notesapplication.viewModel.notesViewModel
+import javax.security.auth.callback.Callback
 import kotlin.getValue
 
-class NotesAdapter(context: Context, val list: List<Notes>) :
+class NotesAdapter(context: Context, val list: List<Notes>,val callback: (Notes) -> Unit) :
     RecyclerView.Adapter<NotesAdapter.NotesViewHolder>() {
 
     override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
+        parent: ViewGroup, viewType: Int
     ): NotesViewHolder {
         val binding = NotesItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return NotesViewHolder(binding)
     }
 
     override fun onBindViewHolder(
-        holder: NotesViewHolder,
-        position: Int
+        holder: NotesViewHolder, position: Int
     ) {
         val item = list[position]
         holder.binding.showTitle.text = item.title.toString()
@@ -43,9 +42,10 @@ class NotesAdapter(context: Context, val list: List<Notes>) :
                 holder.binding.priority.setBackgroundResource(R.drawable.red_circle)
             }
         }
-//        holder.binding.root.setOnLongClickListener{
-//
-//        }
+        holder.binding.root.setOnLongClickListener {
+            callback(item)
+            true
+        }
     }
 
     override fun getItemCount(): Int {

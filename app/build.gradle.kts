@@ -81,8 +81,5 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.4") // Check latest version
     implementation("androidx.navigation:navigation-ui-ktx:2.7.4")
-    //Fire Base
-    implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
-    implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-config")
 }
+

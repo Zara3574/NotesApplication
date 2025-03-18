@@ -24,14 +24,15 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
         viewModel.getNotes().observe(viewLifecycleOwner) {notes->
-            binding.recyclarView.layoutManager= GridLayoutManager(requireContext(),2)
-            binding.recyclarView.adapter= NotesAdapter(requireContext(),notes)
-            Log.d("", "Hello World  $notes")
-
+            binding.recyclarView.layoutManager= GridLayoutManager(requireContext(),1)
+            binding.recyclarView.adapter= NotesAdapter(requireContext(),notes){ note ->
+                viewModel.deleteNotes(note) // Pass function reference correctly
+            }
         }
         binding.addButton.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_createNotes)
         }
         return binding.root
     }
+
 }
