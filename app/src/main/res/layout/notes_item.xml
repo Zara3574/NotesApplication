@@ -49,12 +49,13 @@
 
             <TextView
                 android:id="@+id/show_date"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/sourgummynormal"
                 android:text="03 March 2025"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                android:textAlignment="textEnd"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
